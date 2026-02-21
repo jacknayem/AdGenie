@@ -1,0 +1,3 @@
+flipkart_com-ecommerce_sample: https://www.kaggle.com/datasets/atharvjairath/flipkart-ecommerce-dataset
+
+eCommerce behavior data: https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store
