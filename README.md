@@ -1,6 +1,6 @@
 # 🧞‍♂️ AdGenie: AI-Powered Dynamic Creative Optimization (DCO)
 
-![AdGenie Banner](generated_ad.png)
+![AdGenie Banner](https://raw.githubusercontent.com/jacknayem/AdGenie/refs/heads/main/src/generated_ad.png)
 
 **AdGenie** is a programmatic advertising prototype that simulates real-time Dynamic Creative Optimization (DCO). Instead of serving static ads to audiences, AdGenie ingests mock user clickstream data, uses LLMs to infer the user's psychological visual preference, and generates a personalized product image and headline on the fly.
 
