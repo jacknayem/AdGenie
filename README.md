@@ -1,10 +1,10 @@
-# 🧞‍♂️ AdGenie: AI-Powered Dynamic Creative Optimization (DCO)
+# AdGenie: AI-Powered Dynamic Creative Optimization (DCO)
 
 ![AdGenie Banner](https://raw.githubusercontent.com/jacknayem/AdGenie/refs/heads/main/src/generated_ad.png)
 
 **AdGenie** is a programmatic advertising prototype that simulates real-time Dynamic Creative Optimization (DCO). Instead of serving static ads to audiences, AdGenie ingests mock user clickstream data, uses LLMs to infer the user's psychological visual preference, and generates a personalized product image and headline on the fly.
 
-> 🎥 **[Watch the Video Demo Here]** *(https://www.loom.com/share/4a05f3d23f8c41c3922525ff60f04b09)*
+> **[Watch the Video Demo Here]** *(https://www.loom.com/share/4a05f3d23f8c41c3922525ff60f04b09)*
 
 ## 🚀 Features
 
@@ -27,7 +27,7 @@
 3. **The Director:** Llama 3 writes a high-fidelity image prompt incorporating the product and the predicted style, alongside a targeted headline.
 4. **The Artist:** The prompt is sent to an open-source image generation model to render the final ad creative.
 
-## 💻 How to Run Locally
+## How to Run Locally
 
 If you want to test the DCO engine on your local machine, follow these steps:
 
@@ -35,3 +35,27 @@ If you want to test the DCO engine on your local machine, follow these steps:
    ```bash
    git clone [https://github.com/jacknayem/AdGenie.git](https://github.com/jacknayem/AdGenie.git)
    cd AdGenie
+2. **Set up a virtual environment:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+3. **Install the required dependencies:**
+   ```bash
+   pip install -r requirements.txt`
+4. **Add your HuggingFace API Key:**
+   Open `generator.py` and insert your free Groq API key where indicated.
+   1. **STEP1**: huggingface.co/login
+   2. **STEP2**: Settings -> Access Tokens -> Create new token -> Read -> Token Name (Copy the Token)
+6. **Add your Groq API Key:**
+   Open `agent.py` and insert your free Groq API key where indicated.
+   1. **Log in**: https://console.groq.com/login
+   2. **API Key** get the GROQ_API_KEY
+7. **Download Data:**
+   1. **[flipkart_com-ecommerce_sample]** *(https://www.kaggle.com/datasets/atharvjairath/flipkart-ecommerce-dataset)*
+   2. **[eCommerce behavior data]** *(https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store)*
+   3. Put data in `Data Folder`
+   4. Do not forget to define the path or file name in code source
+8. **Run the application:**
+   ```bash
+   python user_interest.py
+   streamlit run src/app.py`
