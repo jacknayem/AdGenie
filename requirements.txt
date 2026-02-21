@@ -1,0 +1,7 @@
+streamlit
+pandas
+langchain-groq
+Pillow
+requests
+faiss-cpu
+sentence-transformers
